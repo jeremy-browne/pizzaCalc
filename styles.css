@@ -1,0 +1,97 @@
+:root {
+    --pizzaSize: 5rem;
+    --pizzaSmall: 3rem;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+}
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 100%;
+    background-color: lightgray;
+    height: 1px;
+}
+
+select {
+    max-width: max-content;
+}
+
+.container {
+    margin-top: 2rem;
+    width: 80vw;
+}
+
+.pizzaBase {
+    background-color: rgb(255, 201, 102);
+    background-image: url("./Pizza_Pepperoni.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: var(--pizzaSize);
+    width: var(--pizzaSize);
+    border-radius: 50%;
+    margin: 1rem;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.side {
+    background-image: url("./garlicBread.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: var(--pizzaSize);
+    width: var(--pizzaSize);
+    border-radius: 50%;
+    margin: 1rem;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#pizzaBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pizzaHeading {
+    text-align: center;
+}
+
+#sides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sidesHeading {
+    display: none;
+    text-align: center;
+}
+
+@media only screen and (max-width : 400px) {
+    .container {
+        margin-top: 2rem;
+        width: 90vw;
+    }
+
+    .pizzaBase {
+        height: var(--pizzaSmall);
+        width: var(--pizzaSmall);
+    }
+
+    .side {
+        height: var(--pizzaSmall);
+        width: var(--pizzaSmall);
+    }
+}

@@ -51,9 +51,6 @@ function loadValues() {
         sidesHeading.style.display = "none";
     }
 
-    
-
-
     fadeElems()
 }
 
